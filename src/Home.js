@@ -6,7 +6,7 @@ function Home(){
     
 
     return(
-        <div className="App">
+        <div className="Apphome">
     
             <div className="welcome">
                 Please choose option from the menu!

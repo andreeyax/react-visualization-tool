@@ -7,6 +7,11 @@
   font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+.Apphome{
+  display: flex;
+  padding-top: 15%;
+  padding-left: 15%;
+}
 
 
 .allCategories{
