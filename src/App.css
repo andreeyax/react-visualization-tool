@@ -145,3 +145,9 @@ html, body, #root, .App {
 .distdiff{
   text-align: center;
 }
+
+.sidebar button.active {
+  background-color: #82ca9d !important;
+  color: white !important;
+  font-weight: 500;
+}

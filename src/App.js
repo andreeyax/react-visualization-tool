@@ -6,11 +6,12 @@ import DistributionCategory from "./distributionCategory";
 import DistributionDifficulty from "./distributionDifficulty";
 import FilterData from "./filterData";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 //export const niz=["andrija","andrej","andreja"]
 
 function App() {
   const navigate = useNavigate(); 
-
+    const location = useLocation();
     const goToCategories = () => {
         navigate("/allcategories"); 
     };
@@ -29,6 +30,7 @@ function App() {
     const goToHome = () => {
         navigate("/"); 
     };
+   const isActive = (path) => location.pathname === path;
   return (
 
     <div className="App">
@@ -44,25 +46,26 @@ function App() {
               
               <div>
                   <div className="allCategories">
-                        &nbsp;&nbsp;&nbsp;<button onClick={goToCategories}>List of categories</button>
+                        &nbsp;&nbsp;&nbsp;<button onClick={goToCategories} 
+                                            className={isActive("/allcategories") ? "active" : ""} >List of categories</button>
                   </div>
               </div>
 
               <div>
                   <div className="allCategories">
-                      &nbsp;&nbsp;&nbsp;<button onClick={goToByCategory}>Distribution by category</button>
+                      &nbsp;&nbsp;&nbsp;<button onClick={goToByCategory} className={isActive("/distributioncategory") ? "active" : ""}>Distribution by category</button>
                   </div>
               </div>
 
               <div>
                   <div className="allCategories">
-                      &nbsp;&nbsp;&nbsp;<button onClick={goToByDifficulty}>Distribution by difficulty</button>
+                      &nbsp;&nbsp;&nbsp;<button onClick={goToByDifficulty} className={isActive("/distributiondifficulty") ? "active" : ""}>Distribution by difficulty</button>
                   </div>
               </div>
 
               <div>
                   <div className="allCategories">
-                      &nbsp;&nbsp;&nbsp;<button onClick={goToFilter}>Filter</button>
+                      &nbsp;&nbsp;&nbsp;<button onClick={goToFilter} className={isActive("/filterdata") ? "active" : ""}>Filter</button>
                   </div>
               </div>
             </div>
