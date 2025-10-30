@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-visualization-tool/static/css/main.4a2c9a22.css",
+    "main.js": "/react-visualization-tool/static/js/main.dacf36a2.js",
+    "static/js/453.605773d9.chunk.js": "/react-visualization-tool/static/js/453.605773d9.chunk.js",
+    "index.html": "/react-visualization-tool/index.html",
+    "main.4a2c9a22.css.map": "/react-visualization-tool/static/css/main.4a2c9a22.css.map",
+    "main.dacf36a2.js.map": "/react-visualization-tool/static/js/main.dacf36a2.js.map",
+    "453.605773d9.chunk.js.map": "/react-visualization-tool/static/js/453.605773d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a2c9a22.css",
+    "static/js/main.dacf36a2.js"
+  ]
+}
