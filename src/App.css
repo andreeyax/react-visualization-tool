@@ -1,9 +1,13 @@
 .App {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  justify-content: flex-start;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .title{
@@ -60,7 +64,8 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-   
+   align-items: stretch;
+   box-sizing: border-box;
 }
 
 .sidebar {
@@ -112,7 +117,8 @@
 
   
   justify-content: center;
-  margin-left: 100px;
+  padding-left: 10%;
+  padding-top: 5%;
   
 }
 

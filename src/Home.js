@@ -11,6 +11,7 @@ function Home(){
             <div className="welcome">
                 Please choose option from the menu!
             </div>
+            
 
             
 
