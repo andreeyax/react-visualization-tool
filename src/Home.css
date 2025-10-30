@@ -1,0 +1,59 @@
+
+
+.logo{
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+.allCategories{
+  display: flex;
+  justify-content: center; 
+  align-items: center;           
+  color:#1a97f0;
+  font-size: 24px; 
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+button{
+  background-color: #262a35;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  width: 300px;
+}
+
+.labelAllCat{
+  margin-right: 20px;
+}
+
+
+.card {
+  background-color: white;     
+  border-radius: 12px;         
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+  max-width: 90%;
+    
+  overflow: auto; 
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+         
+}
+
+.welcome{
+  color: white;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 125px;
+}

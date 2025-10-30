@@ -1,0 +1,14 @@
+.myselect {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none; /* uklanja default plavi okvir na fokusu */
+}
+
+.myselect:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px #007bff;
+}

@@ -1,5 +1,20 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.title{
+  background-color: #262a35;
+  padding:  0;
+  margin: 0; 
+  flex-shrink: 0;
+  width: 100%; 
+  padding: 10px 0;
+  text-align: left; 
+  text-indent: 20px; 
 }
 
 .App-logo {
@@ -35,4 +50,98 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.maincontent{
+  display: flex;
+  flex: 1; /* zauzima sav preostali prostor */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   
+}
+
+.sidebar {
+  
+  background-color: #383e4e;
+  color: white;
+  padding: 20px;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  
+  width: 20%;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+/* Dugmići u sidebaru */
+.sidebar button {
+  background-color: #262a35;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  transition: 0.2s;
+}
+
+.sidebar button:hover {
+  background-color: #82ca9d;
+}
+
+/* Logo naslov */
+.sidebar .logo {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Glavni deo (desno) gde se menjaju stranice */
+.content {
+  flex: 1;                  /* zauzima ostatak širine */
+  
+  padding: 30px;
+  overflow-y: auto;         /* ako ima više sadržaja, samo content skroluje */
+  box-sizing: border-box;
+  
+  background-color: #383e4e;
+
+  
+  justify-content: center;
+  margin-left: 100px;
+  
+}
+
+/* Opcionalno: centriranje sadržaja unutar content */
+.content > * {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Uklanjanje default margina i paddings */
+
+
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #383e4e;
+}
+
+.green{
+  color: #82ca9d;
+}
+
+.distcategory{
+  text-align: center;
+}
+
+.distdiff{
+  text-align: center;
 }
