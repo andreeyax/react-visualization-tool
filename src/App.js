@@ -7,7 +7,7 @@ import DistributionDifficulty from "./distributionDifficulty";
 import FilterData from "./filterData";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-//export const niz=["andrija","andrej","andreja"]
+
 
 function App() {
   const navigate = useNavigate(); 

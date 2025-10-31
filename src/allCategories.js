@@ -8,11 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function AllCategories(){
-    const navigate = useNavigate(); 
     
-    const goToHome = () => {
-        navigate("/"); 
-    };
 
     let categories=[]
 

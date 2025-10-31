@@ -5,11 +5,7 @@ import { allCategoriesData } from "./allCategories";
 import './distributionCategory.css'
 function DistributionCategory(){
 
-    const navigate = useNavigate(); 
-        
-    const goToHome = () => {
-        navigate("/");
-    };
+    
 
     let categories=new Map()
     let catArray=[]
