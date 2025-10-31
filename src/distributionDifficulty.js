@@ -1,7 +1,7 @@
 
 import { useNavigate } from "react-router-dom";
 import { allCategoriesData } from "./allCategories"
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend, Pie, PieChart, Cell } from "recharts";
 function DistributionDifficulty(){
 
     const navigate = useNavigate(); // hook za navigaciju
@@ -31,6 +31,8 @@ function DistributionDifficulty(){
         count: categories.get(cat) || 0 // ako neki cat nema vrednost u mapi, stavi 0
     }));
 
+    const COLORS = ["#82ca9d", "#f6d186", "#f67280"];
+
     return (
         
         <div className="App">
@@ -40,14 +42,26 @@ function DistributionDifficulty(){
             <div className="card">
                 <h2 className="distdiff">Distribution of questions by difficulty</h2>
                 <div className="card-table-wrapper">
-                    <ResponsiveContainer width="100%" height={300} >
-                    <BarChart data={chartData} barCategoryGap="30%" margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                        <XAxis dataKey="category" />
-                        <YAxis />
-                        <Tooltip />
-                        <Bar dataKey="count" fill="#82ca9d" barSize={25}/>
-                    </BarChart>
-                    </ResponsiveContainer>
+                    <ResponsiveContainer width="100%" height={400}>
+      <PieChart >
+        <Pie
+          data={chartData}
+          dataKey="count"
+          nameKey="category"
+          cx="50%"
+          cy="50%"
+          outerRadius={100}
+          fill="#82ca9d"
+          label
+        >
+          {chartData.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Tooltip />
+        <Legend />
+      </PieChart>
+    </ResponsiveContainer>
                 </div>
                 
 
